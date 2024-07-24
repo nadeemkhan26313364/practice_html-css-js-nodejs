@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    width: 800px;
+    height: 940px;
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.main-container .first-tair-div {
+    width: 100%;
+    height: 120px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-container .first-tair-div .right-one,
+.main-container .first-tair-div .left-one {    
+    width: 180px;
+    height: fit-content;
+    padding: 10px;    
+    border: 3px solid black;
+    border-radius: 10px;
+    
+}
+.main-container .first-tair-div .right-one h3 {
+    font-size: 25px;
+    text-align: center;
+}
+.main-container .first-tair-div .right-one ul {
+    list-style-position: inside;
+    font-weight: 500;
+}
+.main-container .first-tair-div .center-one {    
+    width: 250px;
+    height: fit-content;    
+}
+.main-container .first-tair-div .center-one h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.main-container .first-tair-div .center-one h2 {
+    text-align: center;
+    font-size: 35px;
+}
+.main-container .second-tair-div {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.main-container .second-tair-div .second-tair-items {
+    width: 122px;
+    height: 150px;    
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: #fff;
+}
+.main-container .second-tair-div .second-tair-items img {
+    width: 100%;
+    height: auto;
+    object-position: center;
+    object-fit: center;
+    overflow:hidden;
+}
+.main-container .third-tair-div {
+    width: 100%;
+    height: 615px;    
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.60fr 0.20fr 0.20fr;
+    gap: 5px;
+
+}
+.main-container .third-tair-div .grid-items {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.main-container .third-tair-div .grid-items p {
+    background-color: lightgray;
+    padding: 7px;
+    overflow: hidden;
+    color: #000;
+    font-weight: 600;
+}
+.main-container .third-tair-div .grid-items:nth-child(3) {    
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.main-container .third-tair-div .grid-items:nth-child(6) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
